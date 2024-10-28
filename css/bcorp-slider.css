@@ -1,0 +1,29 @@
+.bcorp-blog-carousel a, .bcorp-blog-slider a { text-decoration:none !important; box-shadow:none;}
+.bcorp-carousel-wrap {overflow:hidden;}
+.bcorp-blog-carousel  a:not(:hover), .bcorp-blog-slider a:not(:hover) { color:#ffffff; }
+div.bcorp-blog-slider { overflow:hidden !important; }
+.bcorp-carousel-wrap, .bcorp-carousel-wrap div {border-color:inherit; }
+.bcorp-slider-standard { overflow:hidden; }
+
+.jssora1l, .jssora1r { display: block; position: absolute; width: 45px; height: 45px; cursor: pointer; background: url(../images/slider/a01.png) no-repeat; overflow: hidden; }
+.jssora1l { background-position: -8px -38px; }
+.jssora1r { background-position: -68px -38px; }
+.jssora1l:hover { background-position: -128px -38px; }
+.jssora1r:hover { background-position: -188px -38px; }
+.jssora1l.jssora1ldn { background-position: -8px -38px; }
+.jssora1r.jssora1rdn { background-position: -68px -38px; }
+
+.jssora2l, .jssora2r { display: block; position: absolute; width: 55px; height: 55px; cursor: pointer; background: url(../images/slider/a02.png) no-repeat; overflow: hidden; }
+.jssora2l { background-position: -3px -33px; }
+.jssora2r { background-position: -63px -33px; }
+.jssora2l:hover { background-position: -123px -33px; }
+.jssora2r:hover { background-position: -183px -33px; }
+.jssora2l.jssora2ldn { background-position: -3px -33px; }
+.jssora2r.jssora2rdn { background-position: -63px -33px; }
+
+.jssorb1 { position: absolute; }
+.jssorb1 div, .jssorb01 div:hover, .jssorb01 .av { position: absolute; width: 12px; height: 12px; filter: alpha(opacity=70); opacity: .7; overflow: hidden; cursor: pointer; border: #000 1px solid; }
+.jssorb1 div { background-color: gray; }
+.jssorb1 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb1 .av { background-color: #fff; }
+.jssorb1 .dn, .jssorb01 .dn:hover { background-color: #555555; }

@@ -1,0 +1,82 @@
+.bcsc-element-list {padding-left:3px; position:absolute; top:49px; bottom:0; right:-14px; width:100%; font-size:50px; overflow-x:hidden; overflow-y:scroll;}
+#bcsc-dialog-overlay { position: fixed; z-index:100; top: 0px; left: 0px; height:100%; width:100%; background: #000; display: none; }
+.bcsc-dialog { overflow:hidden; display: none; position: fixed; opacity: 1; z-index: 11000;  height:80%; top:10%; background-color:white;
+                               width:70%;  left:15%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border:1px solid #aaa;}
+@media screen and (max-width: 1200px) { .bcsc-dialog { width:80%; left:10%; } }
+@media screen and (max-width: 1024px) { .bcsc-dialog { width:90%; left:5%; } }
+@media screen and (max-width: 767px) { .bcsc-dialog { width:96%; left:2%; top:50px; } }
+.bcsc-dialog-tabbed {overflow-x:hidden; overflow-y:scroll; position:absolute; top:45px; bottom:51px; left:0px; right:-14px; padding:8px; }
+.bcsc-dialog-tabbed label { font-weight:bold; }
+.bcsc-dialog-tab ul { margin:0; }
+.bcsc-dialog-tab li {display:inline; background-color:#f8f8f8; padding:15px; margin-top:10px; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.bcsc-dialog-tab li.bcorp-active {background-color:white; border-bottom-color:white;}
+.bcsc-dialog-buttons {position:absolute; bottom:0; background-color:#eee; left:0; right:0; text-align:right; padding:10px;
+                      border-top:1px solid #ccc; }
+.bcsc-dialog-buttons button {width:100px; }
+.bcsc-dialog-tab {  background-color:#eee; height:33px;padding-top:12px; border-bottom:1px solid #ccc;}
+.bcsc-dialog-tab a {text-decoration:none;}
+
+.bcsc-dialog-cancel {position:absolute; right:10px; top:10px; font-size:2em; }
+.bcsc-dialog-header {position:absolute; top:0; height:45px; background-color:#eee; left:0; right:0;border-bottom:1px solid #ccc; padding-left:10px;}
+
+/************************************************ Animations ************************************************/
+
+@-webkit-keyframes zoomIn {
+  from { opacity: 0; -webkit-transform: scale3d(.3, .3, .3); transform: scale3d(.3, .3, .3);  }
+  50% { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; -webkit-transform: scale3d(.3, .3, .3); transform: scale3d(.3, .3, .3);  }
+  50% { opacity: 1; }
+}
+
+.bcsc-element, .zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+.bcsc-element {
+  -webkit-transition:width linear 200ms;
+  -moz-transition:width linear 200ms;
+  -ms-transition:width linear 200ms;
+  -o-transition:width linear 200ms;
+  transition:width linear 200ms;
+}
+.bcsc-helper {
+  -webkit-transition:width linear 200ms;
+  -moz-transition:width linear 200ms;
+  -ms-transition:width linear 200ms;
+  -o-transition:width linear 200ms;
+  transition:width linear 200ms;
+  -webkit-transition:height linear 200ms;
+  -moz-transition:height linear 200ms;
+  -ms-transition:height linear 200ms;
+  -o-transition:height linear 200ms;
+  transition:height linear 200ms;
+}
+
+@-webkit-keyframes zoomOut {
+  from { opacity: 1; }
+  50% { opacity: 0; -webkit-transform: scale3d(.3, .3, .3); transform: scale3d(.3, .3, .3); }
+  to { opacity: 0; }
+}
+
+@keyframes zoomOut {
+  from { opacity: 1; }
+  50% { opacity: 0; -webkit-transform: scale3d(.3, .3, .3); transform: scale3d(.3, .3, .3); }
+  to { opacity: 0; }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
